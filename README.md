@@ -1,33 +1,39 @@
-# vue-webshop
+# Webbshop
 
-This template should help get you started developing with Vue 3 in Vite.
+Skapa en applikation som agerar webbutik åt en fiktiv kund. 
+Webbbutiken skall hämta produkter från ett api som finns på följande adress: https://medieinstitutet
+wie-products.azurewebsites.net/api/products  
 
-## Recommended IDE Setup
+Produkterna skall presenteras på ett trevligt sätt genom att använda de tekniker som ni lärt er i 
+kursen.  
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+En användare skall kunna lägga saker i en varukorg. Fundera över hur det skall fungera med 
+varukorgen vad det gäller att lägga till och ta bort varor. Hur skall dessa varor lagras för att kunna 
+presenteras på ett bra sätt? Var någonstans kan dessa varor lagras för att komma åt dem snabbt?  
 
-## Type Support for `.vue` Imports in TS
+När användaren är klar skall användaren komma till en checka-ut-sida där en order skickas till api:t 
+nedan tillsammans med användarens uppgifter. Fundera över hur denna data lagras i databsen och 
+hur ni behöver strukturera upp ert formulär efter det.  
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+För att skapa en order behöver följande adress användas: https://medieinstitutet-wie-products.azurewebsites.net/api/orders
 
-## Customize configuration
+För att göra sidan lite mer levande och kunna visa mer dynamisk data finns det ytterligare några 
+api:er som kan användas:  
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Kategorier: https://medieinstitutet-wie-products.azurewebsites.net/api/categories  
+Sök: https://medieinstitutet-wie-products.azurewebsites.net/api/search?searchtext= 
 
-## Project Setup
+## Betygskrav G: 
 
-```sh
-npm install
-```
+- En fungerande webbshop 
+- Användare kan lägga produkter i varukorgen 
+- Användaren kan skapa en order med sina produkter 
+- Ett admin-gränssnitt finns för att kunna se ordrar.  
 
-### Compile and Hot-Reload for Development
+## Betygskrav VG: 
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+- Alla krav för G 
+- Användaren kan ändra antalet av respektive produkt i varukorgen 
+- Använda routing för de olika sidorna (hem, produkter, betala och admin) 
+- Implementera kategorier med filtrering av produkter 
+- Implementera sök och sökresultat
